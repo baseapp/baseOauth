@@ -3484,21 +3484,6 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 <text x="1.73" y="-2.178" size="1.016" layer="21" font="vector">A</text>
 <text x="-2.938" y="-2.178" size="1.016" layer="21" font="vector">K</text>
 </package>
-<package name="FIDUCIAL_1MM">
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
-<polygon width="0.127" layer="29">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
-</polygon>
-</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -3525,9 +3510,6 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 <vertex x="-2.921" y="-2.413"/>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
-</symbol>
-<symbol name="DOT">
-<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3877,20 +3859,6 @@ Source: http://www.osram.convergy.de/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FIDUCIAL">
-<description>For use by pick and place machines to calibrate the vision/machine, 1mm
-&lt;p&gt;By microbuilder.eu&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="DOT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FIDUCIAL_1MM">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -3928,19 +3896,13 @@ Source: http://www.osram.convergy.de/</description>
 <part name="C12" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="C13" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="C14" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="J1" library="baseOauth" deviceset="M03X2" device="2X3_SILK_SM"/>
+<part name="J1" library="baseOauth" deviceset="M03X2" device="SMT"/>
 <part name="C15" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="U$1" library="baseOauth" deviceset="ABS05" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="LED2" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
-<part name="U$2" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$5" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$6" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$8" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$9" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$10" library="adafruit" deviceset="FIDUCIAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3999,12 +3961,6 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="LED1" gate="G$1" x="68.58" y="205.74"/>
 <instance part="R4" gate="G$1" x="36.83" y="180.34" rot="R90"/>
 <instance part="LED2" gate="G$1" x="36.83" y="205.74"/>
-<instance part="U$2" gate="G$1" x="203.2" y="46.99"/>
-<instance part="U$5" gate="G$1" x="203.2" y="39.37"/>
-<instance part="U$6" gate="G$1" x="215.9" y="39.37"/>
-<instance part="U$8" gate="G$1" x="264.16" y="46.99"/>
-<instance part="U$9" gate="G$1" x="251.46" y="39.37"/>
-<instance part="U$10" gate="G$1" x="264.16" y="39.37"/>
 </instances>
 <busses>
 </busses>

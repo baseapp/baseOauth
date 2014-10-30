@@ -441,6 +441,14 @@
 <text x="-3.683" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.683" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="ABS05">
+<smd name="1" x="-0.55" y="0" dx="0.508" dy="1.016" layer="1"/>
+<smd name="2" x="0.55" y="0" dx="0.508" dy="1.016" layer="1"/>
+<wire x1="-0.9" y1="0.6" x2="0.9" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.9" y1="0.6" x2="0.9" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.9" y1="-0.6" x2="-0.9" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="-0.6" x2="-0.9" y2="0.6" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JHD508-12864COG">
@@ -1043,6 +1051,22 @@ EEPROM: 1K</description>
 <attribute name="OC_FARNELL" value="6344914" constant="no"/>
 <attribute name="OC_NEWARK" value="01H9866" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ABS05">
+<gates>
+<gate name="A" symbol="Q1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABS05">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

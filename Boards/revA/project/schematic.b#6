@@ -537,21 +537,6 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <rectangle x1="-0.675" y1="0.45" x2="0.675" y2="1.05" layer="51"/>
 <rectangle x1="-0.675" y1="-1.05" x2="0.675" y2="-0.45" layer="51"/>
 </package>
-<package name="FIDUCIAL_1MM">
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
-<polygon width="0.127" layer="29">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="-1" y="0" curve="90"/>
-<vertex x="0" y="-1" curve="90"/>
-<vertex x="1" y="0" curve="90"/>
-<vertex x="0" y="1" curve="90"/>
-</polygon>
-</package>
 </packages>
 </library>
 </libraries>
@@ -651,7 +636,7 @@ design rules under a new name.</description>
 <pass name="Default">
 <param name="RoutingGrid" value="6mil"/>
 <param name="tpViaShape" value="round"/>
-<param name="PrefDir.1" value="\"/>
+<param name="PrefDir.1" value="/"/>
 <param name="PrefDir.2" value="0"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
@@ -666,7 +651,7 @@ design rules under a new name.</description>
 <param name="PrefDir.13" value="0"/>
 <param name="PrefDir.14" value="0"/>
 <param name="PrefDir.15" value="0"/>
-<param name="PrefDir.16" value="\"/>
+<param name="PrefDir.16" value="/"/>
 <param name="cfVia" value="8"/>
 <param name="cfNonPref" value="5"/>
 <param name="cfChangeDir" value="2"/>
@@ -775,12 +760,6 @@ design rules under a new name.</description>
 <element name="LED1" library="adafruit" package="CHIP-LED0805" value="" x="32" y="22" rot="MR0"/>
 <element name="R4" library="SparkFun-Passives" package="0402-RES" value="1k" x="3.3048" y="22" rot="MR90"/>
 <element name="LED2" library="adafruit" package="CHIP-LED0805" value="" x="1" y="22" rot="MR0"/>
-<element name="U$2" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="1.8288" y="-2.1336"/>
-<element name="U$5" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="4.572" y="-2.1336"/>
-<element name="U$6" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="7.1628" y="-1.9812"/>
-<element name="U$8" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="18.8976" y="-1.8288" rot="R90"/>
-<element name="U$9" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="21.0312" y="-1.8288" rot="R90"/>
-<element name="U$10" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="23.1648" y="-1.8288" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -811,6 +790,7 @@ design rules under a new name.</description>
 <wire x1="23.4696" y1="21.5288" x2="25.908" y2="21.5288" width="0" layer="19" extent="16-16"/>
 <wire x1="21.448" y1="23.622" x2="23.4696" y2="21.5288" width="0" layer="19" extent="16-16"/>
 <wire x1="20.462" y1="21.9456" x2="21.448" y2="23.622" width="0" layer="19" extent="16-16"/>
+<wire x1="29.464" y1="12.5984" x2="28.956" y2="21.5288" width="0" layer="19" extent="16-16"/>
 <wire x1="20.472" y1="14.354" x2="20.462" y2="21.9456" width="0" layer="19" extent="1-16"/>
 <wire x1="20.6756" y1="11.4704" x2="20.472" y2="14.354" width="0" layer="19" extent="1-16"/>
 <wire x1="20.8384" y1="6.096" x2="20.6756" y2="11.4704" width="0" layer="19" extent="16-16"/>
@@ -821,7 +801,6 @@ design rules under a new name.</description>
 <wire x1="28.956" y1="4.8768" x2="27.0002" y2="4.8768" width="0" layer="19" extent="16-16"/>
 <wire x1="30.9118" y1="4.8768" x2="28.956" y2="4.8768" width="0" layer="19" extent="16-16"/>
 <wire x1="33.3756" y1="4.8364" x2="30.9118" y2="4.8768" width="0" layer="19" extent="16-16"/>
-<wire x1="29.464" y1="12.5984" x2="28.956" y2="4.8768" width="0" layer="19" extent="16-16"/>
 <wire x1="10.3632" y1="14.6304" x2="20.472" y2="14.354" width="0" layer="19" extent="1-16"/>
 <wire x1="3.3048" y1="21.35" x2="10.3632" y2="14.6304" width="0" layer="19" extent="16-16"/>
 <wire x1="1.6764" y1="6.7056" x2="10.3632" y2="14.6304" width="0" layer="19" extent="16-16"/>
@@ -940,7 +919,7 @@ design rules under a new name.</description>
 <contactref element="MCU" pad="13"/>
 <contactref element="LCD" pad="P$17"/>
 <contactref element="J1" pad="4"/>
-<wire x1="22.072" y1="14.354" x2="29.464" y2="15.1384" width="0" layer="19" extent="1-1"/>
+<wire x1="22.072" y1="14.354" x2="29.464" y2="15.1384" width="0" layer="19" extent="1-16"/>
 <wire x1="29.845" y1="6.8326" x2="29.464" y2="15.1384" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SCK">
@@ -948,7 +927,7 @@ design rules under a new name.</description>
 <contactref element="LCD" pad="P$18"/>
 <contactref element="J1" pad="3"/>
 <wire x1="30.9118" y1="6.223" x2="32.004" y2="15.1384" width="0" layer="19" extent="16-16"/>
-<wire x1="22.872" y1="14.354" x2="32.004" y2="15.1384" width="0" layer="19" extent="1-1"/>
+<wire x1="22.872" y1="14.354" x2="32.004" y2="15.1384" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="MISO">
 <contactref element="MCU" pad="14"/>

@@ -2,24 +2,26 @@ EAGLE AutoRouter Statistics:
 
 Job           : D:/Repos/baseOauth/Boards/revA/project/schematic.brd
 
-Start at      : 11:48:37 (10/31/2014)
-End at        : 11:48:40 (10/31/2014)
-Elapsed time  : 00:00:03
+Start at      : 13:12:15 (12/8/2014)
+End at        : 13:12:28 (12/8/2014)
+Elapsed time  : 00:00:13
 
-Signals       :    32   RoutingGrid: 6 mil  Layers: 2
-Connections   :    74   predefined:  0 ( 0 Vias )
+Signals       :    30   RoutingGrid: 6 mil  Layers: 2
+Connections   :    73   predefined:  67 ( 59 Vias )
 
-Router memory :   197120
+Router memory :   155216
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Job has been interrupted!
 
-Time per pass     :  00:00:00  00:00:01  00:00:01  00:00:00  00:00:01  00:00:00
-Number of Ripups  :         0        15         0         0         0         0
-max. Level        :         0         3         0         0         0         0
-max. Total        :         0        22         0         0         0         0
+Passname          :    Busses     Route
 
-Routed            :         9        74        74        74        74        74
-Vias              :         0        79        57        50        44        44
-Resolution        :    12.2 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Time per pass     :  00:00:00  00:00:13
+Number of Ripups  :         0        31
+max. Level        :         0         1
+max. Total        :         0         2
 
-Final             : 100.0% finished
+Routed            :         0         2
+Vias              :         0         3
+Resolution        :    91.8 %    94.5 %
+
+Final             : interrupted

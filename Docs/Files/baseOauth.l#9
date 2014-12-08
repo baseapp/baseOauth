@@ -258,8 +258,8 @@
 <wire x1="1.68" y1="1.14" x2="1.68" y2="-1.14" width="0.127" layer="21"/>
 <wire x1="1.68" y1="-1.14" x2="-1.68" y2="-1.14" width="0.127" layer="21"/>
 <wire x1="-1.68" y1="-1.14" x2="-1.68" y2="1.14" width="0.127" layer="21"/>
-<text x="-5.08" y="-5.08" size="1.27" layer="21">&gt;NAME</text>
-<text x="-5.08" y="3.81" size="1.27" layer="21">&gt;VALUE</text>
+<text x="-2.28" y="-2.68" size="1.27" layer="21">&gt;NAME</text>
+<text x="-1.88" y="1.41" size="1.27" layer="21">&gt;VALUE</text>
 </package>
 <package name="64-LEADPLASTICQUADFLAT-9X9MM">
 <smd name="1" x="-4.5" y="3.75" dx="0.8" dy="0.25" layer="1" roundness="100"/>

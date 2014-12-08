@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -656,6 +656,8 @@ Keying posts into board</description>
 <smd name="P$4" x="0.4" y="-0.5" dx="0.4" dy="0.2" layer="1"/>
 <smd name="P$5" x="0.4" y="0" dx="0.4" dy="0.2" layer="1"/>
 <smd name="P$6" x="0.4" y="0.5" dx="0.4" dy="0.2" layer="1"/>
+<text x="-1.27" y="1.27" size="0.8128" layer="21">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="0.8128" layer="21">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -164,10 +164,10 @@
 <wire x1="342.265" y1="13.97" x2="342.265" y2="19.05" width="0.1016" layer="94"/>
 <wire x1="342.265" y1="19.05" x2="383.54" y2="19.05" width="0.1016" layer="94"/>
 <wire x1="342.265" y1="19.05" x2="342.265" y2="24.13" width="0.1016" layer="94"/>
-<text x="344.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="344.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="357.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
-<text x="343.916" y="4.953" size="2.54" layer="94">Sheet:</text>
+<text x="344.17" y="15.24" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
+<text x="344.17" y="10.16" size="2.286" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="357.505" y="5.08" size="2.54" layer="94" font="vector">&gt;SHEET</text>
+<text x="343.916" y="4.953" size="2.54" layer="94" font="vector">Sheet:</text>
 <frame x1="0" y1="0" x2="387.35" y2="260.35" columns="8" rows="5" layer="94"/>
 </symbol>
 </symbols>
@@ -345,6 +345,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="0.9" y1="0.6" x2="0.9" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="0.9" y1="-0.6" x2="-0.9" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="-0.9" y1="-0.6" x2="-0.9" y2="0.6" width="0.127" layer="21"/>
+<text x="-1.016" y="0.8255" size="0.8128" layer="21" font="vector">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -745,21 +746,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="1206">
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-1.27" y="1.143" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.397" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
 <package name="AXIAL-0.3">
 <wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
 <wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
@@ -791,14 +777,6 @@ chip</description>
 <text x="-2.54" y="-2.032" size="0.4064" layer="27">&gt;VALUE</text>
 <rectangle x1="-2.4892" y1="-1.3208" x2="-1.6393" y2="1.3292" layer="51"/>
 <rectangle x1="1.651" y1="-1.3208" x2="2.5009" y2="1.3292" layer="51"/>
-</package>
-<package name="0805">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
-<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="0603-RES">
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
@@ -833,6 +811,10 @@ chip</description>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 <rectangle x1="-0.2032" y1="-0.3556" x2="0.2032" y2="0.3556" layer="21"/>
+<wire x1="-1.524" y1="0.508" x2="1.524" y2="0.508" width="0.127" layer="21"/>
+<wire x1="1.524" y1="0.508" x2="1.524" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="1.524" y1="-0.508" x2="-1.524" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="-0.508" x2="-1.524" y2="0.508" width="0.127" layer="21"/>
 </package>
 <package name="1/6W-RES">
 <description>1/6W Thru-hole Resistor - *UNPROVEN*</description>
@@ -970,6 +952,40 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <circle x="3.81" y="0" radius="0.523634375" width="0" layer="29"/>
 <circle x="-3.81" y="0" radius="1.02390625" width="0" layer="30"/>
 <circle x="3.81" y="0" radius="1.04726875" width="0" layer="30"/>
+</package>
+<package name="1206">
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1" roundness="50"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1" roundness="50"/>
+<text x="-1.27" y="1.143" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.397" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-2.286" y1="1.016" x2="2.286" y2="1.016" width="0.127" layer="21"/>
+<wire x1="2.286" y1="1.016" x2="2.286" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="2.286" y1="-1.016" x2="-2.286" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="-1.016" x2="-2.286" y2="1.016" width="0.127" layer="21"/>
+<rectangle x1="-2.54" y1="-1.0414" x2="2.54" y2="1.016" layer="29"/>
+</package>
+<package name="0805">
+<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="-1.3716" y1="0.762" x2="-1.3462" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-1.3462" y1="0.762" x2="1.4732" y2="0.762" width="0.127" layer="21"/>
+<wire x1="1.4732" y1="0.762" x2="1.4732" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="1.4732" y1="-0.762" x2="-1.4732" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-1.4732" y1="-0.762" x2="-1.4732" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-1.4732" y1="0.762" x2="-1.3716" y2="0.762" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1254,22 +1270,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-2.2" y1="-1.6" x2="-1.1" y2="1.6" layer="51"/>
 <rectangle x1="1.1" y1="-1.6" x2="2.2" y2="1.6" layer="51"/>
 </package>
-<package name="0603-CAP">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
 <package name="0402-CAP">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
 chip</description>
@@ -1287,6 +1287,10 @@ chip</description>
 <rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<wire x1="-1.397" y1="0.508" x2="-1.397" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-1.397" y1="-0.508" x2="1.397" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="1.397" y1="-0.508" x2="1.397" y2="0.508" width="0.127" layer="21"/>
+<wire x1="1.397" y1="0.508" x2="-1.397" y2="0.508" width="0.127" layer="21"/>
 </package>
 <package name="CAP-PTH-5MM">
 <wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.2032" layer="21"/>
@@ -1308,18 +1312,6 @@ chip</description>
 <pad name="P$2" x="2.5" y="0" drill="0.9" diameter="1.8796"/>
 <text x="-2.54" y="1.17" size="0.4" layer="25">&gt;Name</text>
 <text x="-1.032" y="-0.208" size="0.4" layer="21" ratio="15">&gt;Value</text>
-</package>
-<package name="1210">
-<wire x1="-1.6" y1="1.3" x2="1.6" y2="1.3" width="0.127" layer="51"/>
-<wire x1="1.6" y1="1.3" x2="1.6" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="1.6" y1="-1.3" x2="-1.6" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="-1.3" x2="-1.6" y2="1.3" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="1.3" x2="1.6" y2="1.3" width="0.2032" layer="21"/>
-<wire x1="-1.6" y1="-1.3" x2="1.6" y2="-1.3" width="0.2032" layer="21"/>
-<smd name="1" x="-1.6" y="0" dx="1.2" dy="2" layer="1"/>
-<smd name="2" x="1.6" y="0" dx="1.2" dy="2" layer="1"/>
-<text x="-0.8" y="0.5" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9" y="-0.7" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="1206">
 <wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
@@ -1411,6 +1403,40 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <circle x="2.54" y="0" radius="0.915809375" width="0" layer="30"/>
 <circle x="0" y="0" radius="0.40160625" width="0" layer="29"/>
 <circle x="2.54" y="0" radius="0.40160625" width="0" layer="29"/>
+</package>
+<package name="0603-CAP">
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<wire x1="-1.5" y1="0.9" x2="1.5" y2="0.9" width="0.1" layer="21"/>
+<wire x1="1.5" y1="0.9" x2="1.5" y2="-0.9" width="0.1" layer="21"/>
+<wire x1="1.5" y1="-0.9" x2="-1.5" y2="-0.9" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="-0.9" x2="-1.5" y2="0.9" width="0.1" layer="21"/>
+</package>
+<package name="1210">
+<wire x1="-1.6" y1="1.3" x2="1.6" y2="1.3" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.3" x2="1.6" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.3" x2="-1.6" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.3" x2="-1.6" y2="1.3" width="0.127" layer="51"/>
+<smd name="1" x="-1.6" y="0" dx="1.2" dy="2" layer="1"/>
+<smd name="2" x="1.6" y="0" dx="1.2" dy="2" layer="1"/>
+<text x="-0.8" y="0.5" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9" y="-0.7" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2886,106 +2912,6 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </deviceset>
 </devicesets>
 </library>
-<library name="jumper">
-<description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SJ_2W">
-<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
-<wire x1="3.175" y1="-1.524" x2="-3.175" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.524" x2="3.429" y2="1.27" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.429" y1="1.27" x2="-3.175" y2="1.524" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.429" y1="-1.27" x2="-3.175" y2="-1.524" width="0.1524" layer="21" curve="90"/>
-<wire x1="3.175" y1="-1.524" x2="3.429" y2="-1.27" width="0.1524" layer="21" curve="90"/>
-<wire x1="3.429" y1="-1.27" x2="3.429" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-3.429" y1="-1.27" x2="-3.429" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="1.524" x2="3.175" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="2.794" y1="0" x2="3.302" y2="0" width="0.1524" layer="51"/>
-<wire x1="-2.794" y1="0" x2="-3.302" y2="0" width="0.1524" layer="51"/>
-<wire x1="0" y1="0.762" x2="0" y2="1.397" width="0.1524" layer="51"/>
-<wire x1="0" y1="-1.397" x2="0" y2="-0.762" width="0.1524" layer="51"/>
-<wire x1="2.032" y1="0.127" x2="2.032" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<wire x1="-2.032" y1="-0.127" x2="-2.032" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-2.54" y="0" dx="1.27" dy="2.54" layer="1"/>
-<smd name="2" x="0" y="0" dx="1.27" dy="2.54" layer="1"/>
-<smd name="3" x="2.54" y="0" dx="1.27" dy="2.54" layer="1"/>
-<text x="-3.429" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
-</package>
-<package name="SJ_2">
-<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
-<wire x1="2.159" y1="-1.016" x2="-2.159" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="1.016" x2="2.413" y2="0.762" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="0.762" x2="-2.159" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="-0.762" x2="-2.159" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.159" y1="-1.016" x2="2.413" y2="-0.762" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.413" y1="-0.762" x2="2.413" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="-0.762" x2="-2.413" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="1.016" x2="2.159" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="1.778" y1="0" x2="2.286" y2="0" width="0.1524" layer="51"/>
-<wire x1="-1.778" y1="0" x2="-2.286" y2="0" width="0.1524" layer="51"/>
-<wire x1="0" y1="0.762" x2="0" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-0.762" width="0.1524" layer="51"/>
-<wire x1="1.016" y1="0.127" x2="1.016" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<wire x1="-1.016" y1="-0.127" x2="-1.016" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<smd name="2" x="0" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<smd name="3" x="1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SJ_2">
-<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
-<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
-<pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SJ2W" prefix="SJ" uservalue="yes">
-<description>SMD solder &lt;b&gt;JUMPER&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="SJ_2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="W" package="SJ_2W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="" package="SJ_2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3000,7 +2926,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <part name="BASE-OAUTH" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="KP" library="baseOauth" deviceset="4X1-MEMBRANE-KEYPAD" device=""/>
 <part name="LCD" library="baseOauth" deviceset="JHD508-12864" device=""/>
-<part name="MCU" library="baseOauth" deviceset="ATMEGA328-MMH" device=""/>
+<part name="MCU-328" library="baseOauth" deviceset="ATMEGA328-MMH" device=""/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="SOURCE" library="baseOauth" deviceset="CR2025-CUSTOM-BASEAPP" device=""/>
 <part name="U$4" library="BaseApp" deviceset="VDD" device=""/>
@@ -3022,12 +2948,11 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <part name="C13" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="C14" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="C15" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="U$1" library="baseOauth" deviceset="ABS05" device=""/>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="LED2" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
-<part name="X1" library="con-leotronics" deviceset="1365-12" device=""/>
-<part name="SJ1" library="jumper" deviceset="SJ2W" device=""/>
+<part name="EXTH" library="con-leotronics" deviceset="1365-12" device=""/>
+<part name="ABS" library="baseOauth" deviceset="ABS05" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3058,10 +2983,10 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <instance part="BASE-OAUTH" gate="G$1" x="0" y="0"/>
 <instance part="KP" gate="G$1" x="212.09" y="200.66"/>
 <instance part="LCD" gate="G$1" x="316.23" y="223.52"/>
-<instance part="MCU" gate="A" x="137.16" y="82.55"/>
+<instance part="MCU-328" gate="A" x="137.16" y="82.55"/>
 <instance part="R1" gate="G$1" x="68.58" y="180.34" rot="R90"/>
 <instance part="SOURCE" gate="A" x="323.85" y="64.77"/>
-<instance part="U$4" gate="G$1" x="307.34" y="106.68"/>
+<instance part="U$4" gate="G$1" x="321.31" y="88.9"/>
 <instance part="GND1" gate="1" x="308.61" y="68.58"/>
 <instance part="C1" gate="G$1" x="308.61" y="78.74"/>
 <instance part="C2" gate="G$1" x="64.77" y="83.82" rot="R90"/>
@@ -3080,23 +3005,22 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <instance part="C13" gate="G$1" x="360.68" y="182.88" rot="R180"/>
 <instance part="C14" gate="G$1" x="295.91" y="194.31" rot="R180"/>
 <instance part="C15" gate="G$1" x="99.06" y="104.14" rot="R180"/>
-<instance part="U$1" gate="A" x="77.47" y="77.47" rot="R90"/>
 <instance part="LED1" gate="G$1" x="68.58" y="205.74"/>
 <instance part="R4" gate="G$1" x="36.83" y="180.34" rot="R90"/>
 <instance part="LED2" gate="G$1" x="36.83" y="205.74"/>
-<instance part="X1" gate="-1" x="60.96" y="41.91"/>
-<instance part="X1" gate="-2" x="91.44" y="41.91"/>
-<instance part="X1" gate="-3" x="60.96" y="39.37"/>
-<instance part="X1" gate="-4" x="91.44" y="39.37"/>
-<instance part="X1" gate="-5" x="60.96" y="36.83"/>
-<instance part="X1" gate="-6" x="91.44" y="36.83"/>
-<instance part="X1" gate="-7" x="60.96" y="34.29"/>
-<instance part="X1" gate="-8" x="91.44" y="34.29"/>
-<instance part="X1" gate="-9" x="60.96" y="31.75"/>
-<instance part="X1" gate="-10" x="91.44" y="31.75"/>
-<instance part="X1" gate="-11" x="60.96" y="29.21"/>
-<instance part="X1" gate="-12" x="91.44" y="29.21"/>
-<instance part="SJ1" gate="G$1" x="307.34" y="97.79" rot="R270"/>
+<instance part="EXTH" gate="-1" x="60.96" y="41.91"/>
+<instance part="EXTH" gate="-2" x="91.44" y="41.91"/>
+<instance part="EXTH" gate="-3" x="60.96" y="39.37"/>
+<instance part="EXTH" gate="-4" x="91.44" y="39.37"/>
+<instance part="EXTH" gate="-5" x="60.96" y="36.83"/>
+<instance part="EXTH" gate="-6" x="91.44" y="36.83"/>
+<instance part="EXTH" gate="-7" x="60.96" y="34.29"/>
+<instance part="EXTH" gate="-8" x="91.44" y="34.29"/>
+<instance part="EXTH" gate="-9" x="60.96" y="31.75"/>
+<instance part="EXTH" gate="-10" x="91.44" y="31.75"/>
+<instance part="EXTH" gate="-11" x="60.96" y="29.21"/>
+<instance part="EXTH" gate="-12" x="91.44" y="29.21"/>
+<instance part="ABS" gate="A" x="77.47" y="77.47" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3121,12 +3045,12 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <junction x="308.61" y="72.39"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="GND_2"/>
+<pinref part="MCU-328" gate="A" pin="GND_2"/>
 <junction x="119.38" y="69.85"/>
-<pinref part="MCU" gate="A" pin="GND_3"/>
+<pinref part="MCU-328" gate="A" pin="GND_3"/>
 <junction x="119.38" y="67.31"/>
 <wire x1="119.38" y1="69.85" x2="119.38" y2="67.31" width="0.1524" layer="91"/>
-<pinref part="MCU" gate="A" pin="GND"/>
+<pinref part="MCU-328" gate="A" pin="GND"/>
 <junction x="119.38" y="59.69"/>
 <wire x1="119.38" y1="67.31" x2="119.38" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="59.69" x2="114.3" y2="59.69" width="0.1524" layer="91"/>
@@ -3196,16 +3120,22 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="36.83" y="171.45" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-11" pin="S"/>
+<pinref part="EXTH" gate="-11" pin="S"/>
 <junction x="58.42" y="29.21"/>
 <wire x1="58.42" y1="29.21" x2="54.61" y2="29.21" width="0.1524" layer="91"/>
 <label x="54.61" y="29.21" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-4" pin="S"/>
+<pinref part="EXTH" gate="-4" pin="S"/>
 <junction x="88.9" y="39.37"/>
 <wire x1="88.9" y1="39.37" x2="86.36" y2="39.37" width="0.1524" layer="91"/>
 <label x="86.36" y="39.37" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="EXTH" gate="-2" pin="S"/>
+<junction x="88.9" y="41.91"/>
+<wire x1="88.9" y1="41.91" x2="86.36" y2="41.91" width="0.1524" layer="91"/>
+<label x="86.36" y="41.91" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -3216,9 +3146,9 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <junction x="68.58" y="208.28"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="VCC"/>
+<pinref part="MCU-328" gate="A" pin="VCC"/>
 <junction x="119.38" y="97.79"/>
-<pinref part="MCU" gate="A" pin="AVCC"/>
+<pinref part="MCU-328" gate="A" pin="AVCC"/>
 <junction x="119.38" y="100.33"/>
 <wire x1="119.38" y1="97.79" x2="119.38" y2="100.33" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="100.33" x2="114.3" y2="100.33" width="0.1524" layer="91"/>
@@ -3235,7 +3165,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="172.72" y="93.98" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="AREF"/>
+<pinref part="MCU-328" gate="A" pin="AREF"/>
 <junction x="154.94" y="100.33"/>
 <wire x1="154.94" y1="100.33" x2="158.75" y2="100.33" width="0.1524" layer="91"/>
 <label x="158.75" y="100.33" size="1.016" layer="95" xref="yes"/>
@@ -3267,17 +3197,21 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <junction x="36.83" y="208.28"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-1" pin="S"/>
+<pinref part="EXTH" gate="-1" pin="S"/>
 <junction x="58.42" y="41.91"/>
 <wire x1="58.42" y1="41.91" x2="54.61" y2="41.91" width="0.1524" layer="91"/>
 <label x="54.61" y="41.91" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SJ1" gate="G$1" pin="2"/>
-<junction x="307.34" y="102.87"/>
-<wire x1="307.34" y1="102.87" x2="307.34" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="VDD"/>
-<junction x="307.34" y="106.68"/>
+<junction x="321.31" y="88.9"/>
+<pinref part="SOURCE" gate="A" pin="VDD"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<junction x="308.61" y="83.82"/>
+<wire x1="321.31" y1="85.09" x2="308.61" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="308.61" y1="85.09" x2="308.61" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="321.31" y1="88.9" x2="321.31" y2="85.09" width="0.1524" layer="91"/>
+<junction x="321.31" y="85.09"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -3285,14 +3219,14 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <pinref part="C3" gate="G$1" pin="2"/>
 <junction x="67.31" y="71.12"/>
 <wire x1="67.31" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="MCU" gate="A" pin="PB7"/>
+<pinref part="MCU-328" gate="A" pin="PB7"/>
 <junction x="119.38" y="74.93"/>
 <wire x1="119.38" y1="74.93" x2="82.55" y2="74.93" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="74.93" x2="82.55" y2="72.39" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="1"/>
-<junction x="77.47" y="72.39"/>
 <wire x1="82.55" y1="72.39" x2="77.47" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="71.12" x2="77.47" y2="72.39" width="0.1524" layer="91"/>
+<pinref part="ABS" gate="A" pin="1"/>
+<junction x="77.47" y="72.39"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3386,7 +3320,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="353.06" y="149.86" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PB0"/>
+<pinref part="MCU-328" gate="A" pin="PB0"/>
 <junction x="119.38" y="92.71"/>
 <wire x1="119.38" y1="92.71" x2="93.98" y2="92.71" width="0.1524" layer="91"/>
 <label x="93.98" y="92.71" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3421,7 +3355,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PC6"/>
+<pinref part="MCU-328" gate="A" pin="PC6"/>
 <junction x="154.94" y="82.55"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <junction x="172.72" y="82.55"/>
@@ -3430,13 +3364,13 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="176.53" y="82.55" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-9" pin="S"/>
+<pinref part="EXTH" gate="-9" pin="S"/>
 <junction x="58.42" y="31.75"/>
 <wire x1="58.42" y1="31.75" x2="54.61" y2="31.75" width="0.1524" layer="91"/>
 <label x="54.61" y="31.75" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-10" pin="S"/>
+<pinref part="EXTH" gate="-10" pin="S"/>
 <junction x="88.9" y="31.75"/>
 <wire x1="88.9" y1="31.75" x2="86.36" y2="31.75" width="0.1524" layer="91"/>
 <label x="86.36" y="31.75" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3444,7 +3378,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="A0" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PB1"/>
+<pinref part="MCU-328" gate="A" pin="PB1"/>
 <junction x="119.38" y="90.17"/>
 <wire x1="119.38" y1="90.17" x2="93.98" y2="90.17" width="0.1524" layer="91"/>
 <label x="93.98" y="90.17" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3460,7 +3394,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="SS" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PB2"/>
+<pinref part="MCU-328" gate="A" pin="PB2"/>
 <junction x="119.38" y="87.63"/>
 <wire x1="119.38" y1="87.63" x2="93.98" y2="87.63" width="0.1524" layer="91"/>
 <label x="93.98" y="87.63" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3476,7 +3410,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PB3"/>
+<pinref part="MCU-328" gate="A" pin="PB3"/>
 <junction x="119.38" y="85.09"/>
 <wire x1="119.38" y1="85.09" x2="93.98" y2="85.09" width="0.1524" layer="91"/>
 <label x="93.98" y="85.09" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3489,7 +3423,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="327.66" y="182.88" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-5" pin="S"/>
+<pinref part="EXTH" gate="-5" pin="S"/>
 <junction x="58.42" y="36.83"/>
 <wire x1="58.42" y1="36.83" x2="54.61" y2="36.83" width="0.1524" layer="91"/>
 <label x="54.61" y="36.83" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3497,7 +3431,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PB5"/>
+<pinref part="MCU-328" gate="A" pin="PB5"/>
 <junction x="119.38" y="80.01"/>
 <wire x1="119.38" y1="80.01" x2="93.98" y2="80.01" width="0.1524" layer="91"/>
 <label x="93.98" y="80.01" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3510,7 +3444,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="330.2" y="182.88" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-7" pin="S"/>
+<pinref part="EXTH" gate="-7" pin="S"/>
 <junction x="58.42" y="34.29"/>
 <wire x1="58.42" y1="34.29" x2="54.61" y2="34.29" width="0.1524" layer="91"/>
 <label x="54.61" y="34.29" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3518,13 +3452,13 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PB4"/>
+<pinref part="MCU-328" gate="A" pin="PB4"/>
 <junction x="119.38" y="82.55"/>
 <wire x1="119.38" y1="82.55" x2="93.98" y2="82.55" width="0.1524" layer="91"/>
 <label x="93.98" y="82.55" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-3" pin="S"/>
+<pinref part="EXTH" gate="-3" pin="S"/>
 <junction x="58.42" y="39.37"/>
 <wire x1="58.42" y1="39.37" x2="54.61" y2="39.37" width="0.1524" layer="91"/>
 <label x="54.61" y="39.37" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3586,7 +3520,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="210.82" y="172.72" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PD7"/>
+<pinref part="MCU-328" gate="A" pin="PD7"/>
 <junction x="154.94" y="59.69"/>
 <wire x1="154.94" y1="59.69" x2="161.29" y2="59.69" width="0.1524" layer="91"/>
 <label x="161.29" y="59.69" size="1.016" layer="95" xref="yes"/>
@@ -3600,7 +3534,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="213.36" y="172.72" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PD6"/>
+<pinref part="MCU-328" gate="A" pin="PD6"/>
 <junction x="154.94" y="62.23"/>
 <wire x1="154.94" y1="62.23" x2="161.29" y2="62.23" width="0.1524" layer="91"/>
 <label x="161.29" y="62.23" size="1.016" layer="95" xref="yes"/>
@@ -3614,7 +3548,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="215.9" y="172.72" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PD5"/>
+<pinref part="MCU-328" gate="A" pin="PD5"/>
 <junction x="154.94" y="64.77"/>
 <wire x1="154.94" y1="64.77" x2="161.29" y2="64.77" width="0.1524" layer="91"/>
 <label x="161.29" y="64.77" size="1.016" layer="95" xref="yes"/>
@@ -3622,13 +3556,13 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="RXD" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PD0"/>
+<pinref part="MCU-328" gate="A" pin="PD0"/>
 <junction x="154.94" y="77.47"/>
 <wire x1="154.94" y1="77.47" x2="158.75" y2="77.47" width="0.1524" layer="91"/>
 <label x="158.75" y="77.47" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-6" pin="S"/>
+<pinref part="EXTH" gate="-6" pin="S"/>
 <junction x="88.9" y="36.83"/>
 <wire x1="88.9" y1="36.83" x2="86.36" y2="36.83" width="0.1524" layer="91"/>
 <label x="86.36" y="36.83" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3636,13 +3570,13 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="TXD" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PD1"/>
+<pinref part="MCU-328" gate="A" pin="PD1"/>
 <junction x="154.94" y="74.93"/>
 <wire x1="154.94" y1="74.93" x2="158.75" y2="74.93" width="0.1524" layer="91"/>
 <label x="158.75" y="74.93" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-8" pin="S"/>
+<pinref part="EXTH" gate="-8" pin="S"/>
 <junction x="88.9" y="34.29"/>
 <wire x1="88.9" y1="34.29" x2="86.36" y2="34.29" width="0.1524" layer="91"/>
 <label x="86.36" y="34.29" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3650,17 +3584,17 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PB6"/>
+<pinref part="MCU-328" gate="A" pin="PB6"/>
 <junction x="119.38" y="77.47"/>
 <wire x1="119.38" y1="77.47" x2="82.55" y2="77.47" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="77.47" x2="82.55" y2="82.55" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <junction x="67.31" y="83.82"/>
 <wire x1="67.31" y1="83.82" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="2"/>
-<junction x="77.47" y="82.55"/>
 <wire x1="76.2" y1="83.82" x2="77.47" y2="82.55" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="82.55" x2="77.47" y2="82.55" width="0.1524" layer="91"/>
+<pinref part="ABS" gate="A" pin="2"/>
+<junction x="77.47" y="82.55"/>
 </segment>
 </net>
 <net name="DATA_L2" class="0">
@@ -3676,7 +3610,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <wire x1="36.83" y1="200.66" x2="36.83" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PC2"/>
+<pinref part="MCU-328" gate="A" pin="PC2"/>
 <junction x="154.94" y="92.71"/>
 <wire x1="154.94" y1="92.71" x2="158.75" y2="92.71" width="0.1524" layer="91"/>
 <label x="158.75" y="92.71" size="1.016" layer="95" xref="yes"/>
@@ -3695,7 +3629,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <wire x1="68.58" y1="200.66" x2="68.58" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PC1"/>
+<pinref part="MCU-328" gate="A" pin="PC1"/>
 <junction x="154.94" y="95.25"/>
 <wire x1="154.94" y1="95.25" x2="158.75" y2="95.25" width="0.1524" layer="91"/>
 <label x="158.75" y="95.25" size="1.016" layer="95" xref="yes"/>
@@ -3720,38 +3654,10 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="297.18" y="204.47" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PD2"/>
+<pinref part="MCU-328" gate="A" pin="PD2"/>
 <junction x="154.94" y="72.39"/>
 <wire x1="154.94" y1="72.39" x2="158.75" y2="72.39" width="0.1524" layer="91"/>
 <label x="158.75" y="72.39" size="1.016" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="SJ1" gate="G$1" pin="1"/>
-<junction x="312.42" y="97.79"/>
-<pinref part="SOURCE" gate="A" pin="VDD"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<junction x="308.61" y="83.82"/>
-<wire x1="321.31" y1="85.09" x2="308.61" y2="85.09" width="0.1524" layer="91"/>
-<wire x1="308.61" y1="85.09" x2="308.61" y2="83.82" width="0.1524" layer="91"/>
-<junction x="321.31" y="85.09"/>
-<wire x1="312.42" y1="97.79" x2="321.31" y2="97.79" width="0.1524" layer="91"/>
-<wire x1="321.31" y1="97.79" x2="321.31" y2="85.09" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VIN" class="0">
-<segment>
-<pinref part="SJ1" gate="G$1" pin="3"/>
-<junction x="302.26" y="97.79"/>
-<wire x1="302.26" y1="97.79" x2="298.45" y2="97.79" width="0.1524" layer="91"/>
-<label x="298.45" y="97.79" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-2" pin="S"/>
-<junction x="88.9" y="41.91"/>
-<wire x1="88.9" y1="41.91" x2="86.36" y2="41.91" width="0.1524" layer="91"/>
-<label x="86.36" y="41.91" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

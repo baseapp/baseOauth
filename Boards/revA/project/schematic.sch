@@ -3171,20 +3171,6 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="158.75" y="100.33" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LCD" gate="G$1" pin="IRS"/>
-<junction x="314.96" y="194.31"/>
-<wire x1="314.96" y1="194.31" x2="314.96" y2="189.23" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="189.23" x2="317.5" y2="186.69" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="186.69" x2="317.5" y2="182.88" width="0.1524" layer="91"/>
-<label x="317.5" y="182.88" size="1.016" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<junction x="347.98" y="138.43"/>
-<wire x1="347.98" y1="138.43" x2="347.98" y2="132.08" width="0.1524" layer="91"/>
-<label x="347.98" y="132.08" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="KP" gate="G$1" pin="P$1"/>
 <junction x="208.28" y="176.53"/>
 <wire x1="208.28" y1="176.53" x2="208.28" y2="172.72" width="0.1524" layer="91"/>
@@ -3658,6 +3644,36 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <junction x="154.94" y="72.39"/>
 <wire x1="154.94" y1="72.39" x2="158.75" y2="72.39" width="0.1524" layer="91"/>
 <label x="158.75" y="72.39" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="IRS" class="0">
+<segment>
+<pinref part="LCD" gate="G$1" pin="IRS"/>
+<junction x="314.96" y="194.31"/>
+<wire x1="314.96" y1="194.31" x2="314.96" y2="189.23" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="189.23" x2="317.5" y2="186.69" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="186.69" x2="317.5" y2="182.88" width="0.1524" layer="91"/>
+<label x="317.5" y="182.88" size="1.016" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MCU-328" gate="A" pin="PD3"/>
+<junction x="154.94" y="69.85"/>
+<wire x1="154.94" y1="69.85" x2="158.75" y2="69.85" width="0.1524" layer="91"/>
+<label x="158.75" y="69.85" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="COG_RST" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<junction x="347.98" y="138.43"/>
+<wire x1="347.98" y1="138.43" x2="341.63" y2="138.43" width="0.1524" layer="91"/>
+<label x="341.63" y="138.43" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MCU-328" gate="A" pin="PD4"/>
+<junction x="154.94" y="67.31"/>
+<wire x1="154.94" y1="67.31" x2="158.75" y2="67.31" width="0.1524" layer="91"/>
+<label x="158.75" y="67.31" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

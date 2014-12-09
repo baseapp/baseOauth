@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -871,6 +871,10 @@ chip</description>
 <rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<wire x1="-1.5748" y1="0.6096" x2="1.5494" y2="0.6096" width="0.0635" layer="21"/>
+<wire x1="1.5494" y1="0.6096" x2="1.5494" y2="-0.6096" width="0.0635" layer="21"/>
+<wire x1="-1.5748" y1="0.6096" x2="-1.5748" y2="-0.6096" width="0.0635" layer="21"/>
+<wire x1="-1.5748" y1="-0.6096" x2="1.5494" y2="-0.6096" width="0.0635" layer="21"/>
 </package>
 <package name="B82462G">
 <wire x1="3.15" y1="3.15" x2="-3.15" y2="3.15" width="0.127" layer="51"/>
@@ -6088,7 +6092,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <text x="8.89" y="17.78" size="3.81" layer="94">SoC NRF81522</text>
 <text x="124.46" y="186.69" size="3.81" layer="94">Keypad</text>
 <text x="222.25" y="109.22" size="3.81" layer="94">COG LCD</text>
-<text x="24.13" y="175.26" size="3.81" layer="94">Photo Transistor</text>
+<text x="16.51" y="173.99" size="3.81" layer="94">Photo Transistor</text>
 <text x="269.24" y="7.62" size="2.54" layer="94">B</text>
 <text x="256.54" y="7.62" size="2.54" layer="94">1</text>
 <text x="234.95" y="26.67" size="6.4516" layer="94">BaseApp</text>
@@ -7035,6 +7039,13 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="15.24" y1="129.54" x2="15.24" y2="125.73" width="0.1524" layer="91"/>
 <label x="15.24" y="125.73" size="0.8128" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="NRF" gate="G$1" pin="DIE_PAD"/>
+<junction x="92.71" y="46.99"/>
+<wire x1="92.71" y1="46.99" x2="92.71" y2="49.53" width="0.1524" layer="91"/>
+<wire x1="92.71" y1="49.53" x2="95.25" y2="49.53" width="0.1524" layer="91"/>
+<label x="95.25" y="49.53" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="VDD" class="0">
 <segment>
@@ -7417,20 +7428,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="199.39" y="179.07" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<junction x="237.49" y="124.46"/>
-<wire x1="237.49" y1="124.46" x2="234.95" y2="124.46" width="0.1524" layer="91"/>
-<label x="234.95" y="124.46" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="LCD" gate="G$1" pin="IRS"/>
-<junction x="217.17" y="168.91"/>
-<wire x1="217.17" y1="168.91" x2="217.17" y2="163.83" width="0.1524" layer="91"/>
-<wire x1="217.17" y1="163.83" x2="219.71" y2="161.29" width="0.1524" layer="91"/>
-<wire x1="219.71" y1="161.29" x2="219.71" y2="157.48" width="0.1524" layer="91"/>
-<label x="219.71" y="157.48" size="1.016" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
 <pinref part="NRF" gate="G$1" pin="P0.20"/>
 <junction x="130.81" y="46.99"/>
 <wire x1="130.81" y1="46.99" x2="144.78" y2="46.99" width="0.1524" layer="91"/>
@@ -7692,6 +7689,37 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="R5" gate="G$1" pin="2"/>
 <junction x="113.03" y="139.7"/>
 <wire x1="110.49" y1="139.7" x2="113.03" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="COG_IRS" class="0">
+<segment>
+<pinref part="NRF" gate="G$1" pin="P0.17"/>
+<junction x="130.81" y="39.37"/>
+<wire x1="130.81" y1="39.37" x2="137.16" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="39.37" x2="137.16" y2="38.1" width="0.1524" layer="91"/>
+<label x="137.16" y="38.1" size="0.8128" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="LCD" gate="G$1" pin="IRS"/>
+<junction x="217.17" y="168.91"/>
+<wire x1="217.17" y1="168.91" x2="217.17" y2="163.83" width="0.1524" layer="91"/>
+<wire x1="217.17" y1="163.83" x2="219.71" y2="161.29" width="0.1524" layer="91"/>
+<wire x1="219.71" y1="161.29" x2="219.71" y2="157.48" width="0.1524" layer="91"/>
+<label x="219.71" y="157.48" size="1.016" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="COG_RST" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<junction x="237.49" y="124.46"/>
+<wire x1="237.49" y1="124.46" x2="234.95" y2="124.46" width="0.1524" layer="91"/>
+<label x="234.95" y="124.46" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="NRF" gate="G$1" pin="P0.21"/>
+<junction x="107.95" y="82.55"/>
+<wire x1="107.95" y1="82.55" x2="107.95" y2="86.36" width="0.1524" layer="91"/>
+<label x="107.95" y="86.36" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>

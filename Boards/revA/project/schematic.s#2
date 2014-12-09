@@ -345,6 +345,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="0.9" y1="0.6" x2="0.9" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="0.9" y1="-0.6" x2="-0.9" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="-0.9" y1="-0.6" x2="-0.9" y2="0.6" width="0.127" layer="21"/>
+<text x="-1.016" y="0.8255" size="0.8128" layer="21" font="vector">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -2925,7 +2926,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <part name="BASE-OAUTH" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="KP" library="baseOauth" deviceset="4X1-MEMBRANE-KEYPAD" device=""/>
 <part name="LCD" library="baseOauth" deviceset="JHD508-12864" device=""/>
-<part name="MCU" library="baseOauth" deviceset="ATMEGA328-MMH" device=""/>
+<part name="MCU-328" library="baseOauth" deviceset="ATMEGA328-MMH" device=""/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="SOURCE" library="baseOauth" deviceset="CR2025-CUSTOM-BASEAPP" device=""/>
 <part name="U$4" library="BaseApp" deviceset="VDD" device=""/>
@@ -2947,11 +2948,11 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <part name="C13" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="C14" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="C15" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="U$1" library="baseOauth" deviceset="ABS05" device=""/>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="LED2" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
 <part name="EXTH" library="con-leotronics" deviceset="1365-12" device=""/>
+<part name="ABS" library="baseOauth" deviceset="ABS05" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2982,7 +2983,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <instance part="BASE-OAUTH" gate="G$1" x="0" y="0"/>
 <instance part="KP" gate="G$1" x="212.09" y="200.66"/>
 <instance part="LCD" gate="G$1" x="316.23" y="223.52"/>
-<instance part="MCU" gate="A" x="137.16" y="82.55"/>
+<instance part="MCU-328" gate="A" x="137.16" y="82.55"/>
 <instance part="R1" gate="G$1" x="68.58" y="180.34" rot="R90"/>
 <instance part="SOURCE" gate="A" x="323.85" y="64.77"/>
 <instance part="U$4" gate="G$1" x="321.31" y="88.9"/>
@@ -3004,7 +3005,6 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <instance part="C13" gate="G$1" x="360.68" y="182.88" rot="R180"/>
 <instance part="C14" gate="G$1" x="295.91" y="194.31" rot="R180"/>
 <instance part="C15" gate="G$1" x="99.06" y="104.14" rot="R180"/>
-<instance part="U$1" gate="A" x="77.47" y="77.47" rot="R90"/>
 <instance part="LED1" gate="G$1" x="68.58" y="205.74"/>
 <instance part="R4" gate="G$1" x="36.83" y="180.34" rot="R90"/>
 <instance part="LED2" gate="G$1" x="36.83" y="205.74"/>
@@ -3020,6 +3020,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <instance part="EXTH" gate="-10" x="91.44" y="31.75"/>
 <instance part="EXTH" gate="-11" x="60.96" y="29.21"/>
 <instance part="EXTH" gate="-12" x="91.44" y="29.21"/>
+<instance part="ABS" gate="A" x="77.47" y="77.47" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3044,12 +3045,12 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <junction x="308.61" y="72.39"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="GND_2"/>
+<pinref part="MCU-328" gate="A" pin="GND_2"/>
 <junction x="119.38" y="69.85"/>
-<pinref part="MCU" gate="A" pin="GND_3"/>
+<pinref part="MCU-328" gate="A" pin="GND_3"/>
 <junction x="119.38" y="67.31"/>
 <wire x1="119.38" y1="69.85" x2="119.38" y2="67.31" width="0.1524" layer="91"/>
-<pinref part="MCU" gate="A" pin="GND"/>
+<pinref part="MCU-328" gate="A" pin="GND"/>
 <junction x="119.38" y="59.69"/>
 <wire x1="119.38" y1="67.31" x2="119.38" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="59.69" x2="114.3" y2="59.69" width="0.1524" layer="91"/>
@@ -3145,9 +3146,9 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <junction x="68.58" y="208.28"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="VCC"/>
+<pinref part="MCU-328" gate="A" pin="VCC"/>
 <junction x="119.38" y="97.79"/>
-<pinref part="MCU" gate="A" pin="AVCC"/>
+<pinref part="MCU-328" gate="A" pin="AVCC"/>
 <junction x="119.38" y="100.33"/>
 <wire x1="119.38" y1="97.79" x2="119.38" y2="100.33" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="100.33" x2="114.3" y2="100.33" width="0.1524" layer="91"/>
@@ -3164,7 +3165,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="172.72" y="93.98" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="AREF"/>
+<pinref part="MCU-328" gate="A" pin="AREF"/>
 <junction x="154.94" y="100.33"/>
 <wire x1="154.94" y1="100.33" x2="158.75" y2="100.33" width="0.1524" layer="91"/>
 <label x="158.75" y="100.33" size="1.016" layer="95" xref="yes"/>
@@ -3218,14 +3219,14 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <pinref part="C3" gate="G$1" pin="2"/>
 <junction x="67.31" y="71.12"/>
 <wire x1="67.31" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="MCU" gate="A" pin="PB7"/>
+<pinref part="MCU-328" gate="A" pin="PB7"/>
 <junction x="119.38" y="74.93"/>
 <wire x1="119.38" y1="74.93" x2="82.55" y2="74.93" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="74.93" x2="82.55" y2="72.39" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="1"/>
-<junction x="77.47" y="72.39"/>
 <wire x1="82.55" y1="72.39" x2="77.47" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="71.12" x2="77.47" y2="72.39" width="0.1524" layer="91"/>
+<pinref part="ABS" gate="A" pin="1"/>
+<junction x="77.47" y="72.39"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3319,7 +3320,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="353.06" y="149.86" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PB0"/>
+<pinref part="MCU-328" gate="A" pin="PB0"/>
 <junction x="119.38" y="92.71"/>
 <wire x1="119.38" y1="92.71" x2="93.98" y2="92.71" width="0.1524" layer="91"/>
 <label x="93.98" y="92.71" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3354,7 +3355,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PC6"/>
+<pinref part="MCU-328" gate="A" pin="PC6"/>
 <junction x="154.94" y="82.55"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <junction x="172.72" y="82.55"/>
@@ -3377,7 +3378,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="A0" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PB1"/>
+<pinref part="MCU-328" gate="A" pin="PB1"/>
 <junction x="119.38" y="90.17"/>
 <wire x1="119.38" y1="90.17" x2="93.98" y2="90.17" width="0.1524" layer="91"/>
 <label x="93.98" y="90.17" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3393,7 +3394,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="SS" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PB2"/>
+<pinref part="MCU-328" gate="A" pin="PB2"/>
 <junction x="119.38" y="87.63"/>
 <wire x1="119.38" y1="87.63" x2="93.98" y2="87.63" width="0.1524" layer="91"/>
 <label x="93.98" y="87.63" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3409,7 +3410,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PB3"/>
+<pinref part="MCU-328" gate="A" pin="PB3"/>
 <junction x="119.38" y="85.09"/>
 <wire x1="119.38" y1="85.09" x2="93.98" y2="85.09" width="0.1524" layer="91"/>
 <label x="93.98" y="85.09" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3430,7 +3431,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PB5"/>
+<pinref part="MCU-328" gate="A" pin="PB5"/>
 <junction x="119.38" y="80.01"/>
 <wire x1="119.38" y1="80.01" x2="93.98" y2="80.01" width="0.1524" layer="91"/>
 <label x="93.98" y="80.01" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3451,7 +3452,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PB4"/>
+<pinref part="MCU-328" gate="A" pin="PB4"/>
 <junction x="119.38" y="82.55"/>
 <wire x1="119.38" y1="82.55" x2="93.98" y2="82.55" width="0.1524" layer="91"/>
 <label x="93.98" y="82.55" size="1.016" layer="95" rot="R180" xref="yes"/>
@@ -3519,7 +3520,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="210.82" y="172.72" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PD7"/>
+<pinref part="MCU-328" gate="A" pin="PD7"/>
 <junction x="154.94" y="59.69"/>
 <wire x1="154.94" y1="59.69" x2="161.29" y2="59.69" width="0.1524" layer="91"/>
 <label x="161.29" y="59.69" size="1.016" layer="95" xref="yes"/>
@@ -3533,7 +3534,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="213.36" y="172.72" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PD6"/>
+<pinref part="MCU-328" gate="A" pin="PD6"/>
 <junction x="154.94" y="62.23"/>
 <wire x1="154.94" y1="62.23" x2="161.29" y2="62.23" width="0.1524" layer="91"/>
 <label x="161.29" y="62.23" size="1.016" layer="95" xref="yes"/>
@@ -3547,7 +3548,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="215.9" y="172.72" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PD5"/>
+<pinref part="MCU-328" gate="A" pin="PD5"/>
 <junction x="154.94" y="64.77"/>
 <wire x1="154.94" y1="64.77" x2="161.29" y2="64.77" width="0.1524" layer="91"/>
 <label x="161.29" y="64.77" size="1.016" layer="95" xref="yes"/>
@@ -3555,7 +3556,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="RXD" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PD0"/>
+<pinref part="MCU-328" gate="A" pin="PD0"/>
 <junction x="154.94" y="77.47"/>
 <wire x1="154.94" y1="77.47" x2="158.75" y2="77.47" width="0.1524" layer="91"/>
 <label x="158.75" y="77.47" size="1.016" layer="95" xref="yes"/>
@@ -3569,7 +3570,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="TXD" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PD1"/>
+<pinref part="MCU-328" gate="A" pin="PD1"/>
 <junction x="154.94" y="74.93"/>
 <wire x1="154.94" y1="74.93" x2="158.75" y2="74.93" width="0.1524" layer="91"/>
 <label x="158.75" y="74.93" size="1.016" layer="95" xref="yes"/>
@@ -3583,17 +3584,17 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="MCU" gate="A" pin="PB6"/>
+<pinref part="MCU-328" gate="A" pin="PB6"/>
 <junction x="119.38" y="77.47"/>
 <wire x1="119.38" y1="77.47" x2="82.55" y2="77.47" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="77.47" x2="82.55" y2="82.55" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <junction x="67.31" y="83.82"/>
 <wire x1="67.31" y1="83.82" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="2"/>
-<junction x="77.47" y="82.55"/>
 <wire x1="76.2" y1="83.82" x2="77.47" y2="82.55" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="82.55" x2="77.47" y2="82.55" width="0.1524" layer="91"/>
+<pinref part="ABS" gate="A" pin="2"/>
+<junction x="77.47" y="82.55"/>
 </segment>
 </net>
 <net name="DATA_L2" class="0">
@@ -3609,7 +3610,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <wire x1="36.83" y1="200.66" x2="36.83" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PC2"/>
+<pinref part="MCU-328" gate="A" pin="PC2"/>
 <junction x="154.94" y="92.71"/>
 <wire x1="154.94" y1="92.71" x2="158.75" y2="92.71" width="0.1524" layer="91"/>
 <label x="158.75" y="92.71" size="1.016" layer="95" xref="yes"/>
@@ -3628,7 +3629,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <wire x1="68.58" y1="200.66" x2="68.58" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PC1"/>
+<pinref part="MCU-328" gate="A" pin="PC1"/>
 <junction x="154.94" y="95.25"/>
 <wire x1="154.94" y1="95.25" x2="158.75" y2="95.25" width="0.1524" layer="91"/>
 <label x="158.75" y="95.25" size="1.016" layer="95" xref="yes"/>
@@ -3653,7 +3654,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <label x="297.18" y="204.47" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="A" pin="PD2"/>
+<pinref part="MCU-328" gate="A" pin="PD2"/>
 <junction x="154.94" y="72.39"/>
 <wire x1="154.94" y1="72.39" x2="158.75" y2="72.39" width="0.1524" layer="91"/>
 <label x="158.75" y="72.39" size="1.016" layer="95" xref="yes"/>
